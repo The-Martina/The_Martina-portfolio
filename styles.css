@@ -1,0 +1,255 @@
+@font-face {
+    font-family: NinbusSansL-Bold;
+    src: url(font/nimbus-sans-L-bold.otf);
+}
+
+body {
+    font-family: NinbusSansL-Bold;
+    margin: 0;
+    padding: 0;
+    background-color: #1F2041;
+    color: #FAFAFF;
+}
+
+
+
+.header-container {
+    background-color: #1F2041;
+    color: #FFC857;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 50px; 
+    height: auto;
+    border-radius: 50%;
+}
+.logo {
+    width: 50px; 
+    height: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+    align-items: center;
+    
+}
+
+nav ul li a {
+    color: #FFC857;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    
+}
+
+nav ul li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+    
+}
+
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+.section1 {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #1F2041;
+    color: #FFC857;
+}
+
+.smallinfo {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    margin-top: -15px;
+}
+
+
+
+
+.presentation {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+.introduction {
+    align-items: center;
+    text-align: left;
+    font-size: 20px;
+    margin: 0px;
+    color: #FFC857 ;
+    margin-bottom: -30px;
+    
+}
+.wrapper{
+    display: inline-flex;
+    align-items: center;
+}
+.wrapper .static-text{
+    font-size: 60px;
+    color: #FFC857 ;
+    text-align: left;
+}
+.wrapper .dynamic-text{
+    margin-left: 0px;
+    line-height: 90px;
+    height: 70px;
+    overflow: hidden;
+    text-align: left;
+    color: #FAFAFF;
+}
+.dynamic-text li{
+    list-style: none;
+    font-size: 60px;
+    position: relative;
+    top: 0;
+    animation: slide 10s steps(5) infinite;
+}
+@keyframes slide {
+    100%{
+        top: -460px ;
+    }
+}
+    
+ .dynamic-text li span{
+    position: relative;
+}
+.wrapper .dynamic-text li span::after{
+    content: "";
+    position: absolute;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background: #1F2041;
+    border-left: 2px solid #FFC857;
+    animation: typing 2s steps(20) infinite;
+}
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+.space{
+    height: 100px;
+}
+
+@media (max-width: 768px){
+    .wrapper .static-text{
+        font-size: 20px;
+        color: #FFC857 ;
+        text-align: left;
+    }
+    .wrapper .dynamic-text{
+        margin-left: 0px;
+        line-height: 40px;
+        height: 35px;
+        overflow: hidden;
+        text-align: left;
+        color: #FAFAFF;
+    }
+    .dynamic-text li{
+        list-style: none;
+        font-size: 20px;
+        position: relative;
+        top: 0;
+        animation: slide 10s steps(5) infinite;
+    }
+
+    .logo {
+        width: 20px; 
+        height: 20px;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    @keyframes slide {
+        100%{
+            top: -204px ;
+        }
+    }
+    .space{
+        height: 0px;
+    }
+}
+
+.banerImg{
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill {
+    flex: 1;
+    margin: 20px;
+}
+
+.skill h3 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project {
+    flex: 1;
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
